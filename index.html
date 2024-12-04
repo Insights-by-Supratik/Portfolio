@@ -1149,7 +1149,7 @@
 						
 						<div class="col-sm-6">
 							<div class="footer-content">
-								<form role="form" id="footer-form">
+								<form role="form" id="contact-form">
 									<div class="form-group has-feedback">
 										<label class="sr-only" for="name2">Name</label>
 										<input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
@@ -1167,6 +1167,8 @@
 									</div>
 									<input type="submit" value="Send" class="btn btn-default">
 								</form>
+								<!-- Status Message Placeholder -->
+								<p id="status-message" class="mt-3"></p>
 							</div>
 						</div>
 						
@@ -1216,6 +1218,40 @@
 
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
-		
+		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script>
+		// Initialize EmailJS with your Public Key
+		emailjs.init('ix3G0Earso154-jr2'); // Replace with your actual Public Key
+
+		// Handle Form Submission
+		document.getElementById('contact-form').addEventListener('submit', function (event) {
+			event.preventDefault(); // Prevent the default form submission
+
+			// Collect form data
+			const formData = {
+			name: document.getElementById('name').value,
+			email: document.getElementById('email').value,
+			message: document.getElementById('message').value
+			};
+
+			// Send email using EmailJS
+			emailjs
+			.send('service_44r951g', 'template_q1wkj4d', formData) // Replace with your actual IDs
+			.then(
+				function (response) {
+				document.getElementById('status-message').innerHTML =
+					'Your message has been sent successfully!';
+				document.getElementById('status-message').style.color = 'green';
+				document.getElementById('contact-form').reset();
+				},
+				function (error) {
+				document.getElementById('status-message').innerHTML =
+					'Failed to send message. Please try again later.';
+				document.getElementById('status-message').style.color = 'red';
+				}
+			);
+		});
+		</script>
+
 	</body>
 </html>
