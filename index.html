@@ -1,609 +1,1221 @@
 <!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Insights by Supratik</title>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Insights by Supratik</title>
+		<meta name="Supratik's Portfolio">
+		<meta name="author">
 
-<style>
-  .about-section {
-    text-align: center;
-    padding: 50px 0;
-  }
-  .about-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .about-section img {
-    width: 200px; /* Adjust the size as needed */
-    height: 200px;
-    border-radius: 50%; /* Makes the image round */
-    margin-bottom: 20px;
-  }
-  .about-section p {
-    color: #333;
-  }
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  /* Additional CSS for Projects Section */
-.projects-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.card {
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
-}
-.card-img-top {
-  height: 200px; /* Adjust this value to fit the image properly in the card */
-  object-fit: cover; /* This makes sure the image covers the area properly */
-}
-.card-body {
-  padding: 15px;
-}
-.card-title {
-  font-size: 1.25rem;
-}
-.card-text {
-  margin-bottom: 15px;
-}
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="images/Supratik-Favicon.jpg">
+ 
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet"> 
+		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet"> 
+		<link href="css/animations.css" rel="stylesheet"> 
+		<link href="css/style.css" rel="stylesheet"> 
+		<link href="css/custom.css" rel="stylesheet">
+	</head>
 
-/* Additional CSS for Skills Section */
-.skills-section h2 {
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-}
-.skills-section .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.skills-section .card-img-top {
-  padding: 20px; /* Add padding around your images if needed */
-  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
-  height: 180px; /* Fixed height for consistency */
-  object-fit: contain; /* This will make sure the image is scaled properly within the container */
-}
-.skills-section .card-body {
-  padding: 15px;
-}
-.skills-section .card-title {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-}
-.skills-section .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
-}
-.skills-section .btn-outline-primary:hover {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
-}
+	<body class="no-trans">
+		<!-- scrollToTop --> 
+		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
 
-/* Additional CSS for Contact Section */
-.contact-section {
-  padding: 50px 0;
-}
-.contact-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-.contact-section p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-.social-icon {
-  width: 50px; /* Size of your icons */
-  margin-bottom: 10px;
-}
-/* Hover effect for icons */
-.social-icon:hover {
-  opacity: 0.7;
-}
-/* Style for links in the Contact section */
-.contact-section a {
-  color: #fff;
-  text-decoration: none; /* Removes underline from links */
-  display: inline-block; /* Allows for margin on the bottom */
-  margin-bottom: 10px;
-}
-.contact-section a:hover {
-  color: #ddd; /* Color when hovering over the link */
-}
+		<!-- HEADER section start --> 
+		<header class="header fixed clearfix navbar navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
 
-/* CSS for Sticky Navbar */
-.navbar {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
-}
+						<!-- header-left start --> 
+						<div class="header-left">
 
-/* Ensure padding is added to body to avoid content being hidden behind the navbar */
-body { 
-  padding-top: 30px; /* Adjust this value based on the height of your navbar */
-}
+							<!-- logo -->
+							<div class="logo smooth-scroll">
+								<a href="#banner"><img id="logo" src="images/logo.png" alt="Insights by Supratik's Logo"></a>
+							</div>
 
-/* Smooth scroll */
-html {
-  scroll-behavior: smooth;
-}
+							
+						</div>
+						<!-- header-left end -->
 
-/* Style for navigation bar links */
-.navbar-nav .nav-link {
-  color: white;
-}
+					</div>
+					<div class="col-md-8">
 
-.navbar-nav .nav-link:hover {
-  color: #f8f9fa; /* Slightly lighter white when hovering over links */
-}
+						<!-- header-right start --> 
+						<div class="header-right">
 
-/* Media query for responsive navbar collapsing */
-@media (max-width: 992px) {
-  .navbar-collapse {
-    background-color: #343a40; /* Same as navbar color for seamless look */
-  }
-}
+							<!-- main-navigation start --> 
+							<div class="main-navigation animated">
 
-/* Scroll to Top Icon Styling */
-#scrollToTopIcon {
-  width: 50px; 
-  height: 50px;
-  display: none; /* Hidden by default */
-  position: fixed; 
-  bottom: 20px; 
-  right: 20px; 
-  cursor: pointer;
-  z-index: 1000; /* Ensure it stays above other elements */
-}
+								<!-- navbar start --> 
+								<nav class="navbar navbar-default" role="navigation">
+									<div class="container-fluid">
 
-.contact-section {
-  padding: 50px 0;
-}
+										<!-- Toggle get grouped for better mobile display -->
+										<div class="navbar-header">
+											<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+											</button>
+										</div>
 
-form .form-group {
-  margin-bottom: 15px;
-}
+										<!-- Collect the nav links, forms, and other content for toggling -->
+										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
+											<ul class="nav navbar-nav navbar-right">
+												<li class="active"><a href="#banner">Home</a></li>
+												<li><a href="#about">About</a></li>
+												<li><a href="#skills">Skills</a></li>
+												<li><a href="#portfolio">Portfolio</a></li>
+												<li><a href="#testimonials">Testimonials</a></li>
+												<li><a href="#contact">Contact</a></li>
+											</ul>
+										</div>
 
-form .btn {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-}
+									</div>
+								</nav>
+								<!-- navbar end -->
 
-form .btn:hover {
-  background-color: #0056b3;
-}
+							</div>
+							<!-- main-navigation end -->
 
-#status-message {
-  color: green;
-  font-weight: bold;
-}
+						</div>
+						<!-- header-right end -->
 
-.contact-section {
-  padding: 50px 0;
-}
+					</div>
+				</div>
+			</div>
+		</header>
 
-.contact-section h2 {
-  margin-bottom: 15px;
-}
+		<!-- header end -->
 
-.footer {
-  background-color: #343a40;
-}
+		<!-- BANNER section start --> 
+		<div id="banner" class="banner">
+			<div class="banner-image"></div>
+			<div class="banner-caption">
+				<div class="container">
+					<div class="row">					 
+						<div class="caption-data" style="margin-top: 0px; opacity: 1;" data-animation-effect="fadeIn">
+								<h2>Welcome</h2>
+								<!-- Fixed Text and Dynamic Typing Effect -->
+								<h1 style="white-space: nowrap; font-size: 3.5em; text-align: center;">
+									<span class="no-uppercase">I am</span> <span id="typed-text" class="dynamic-text"></span>
+								</h1>
+								<!-- <h3 class="padding-top30">Specializing in Product Management and Data Analytics</h3> --> 
+								
+								<!-- Social Media Icons -->
+								<div class="social-icons">
+									<a href="https://www.linkedin.com/in/supratikbh/" target="_blank" class="social-icon">
+									  <i class="fa fa-linkedin"></i>
+									</a>
+									<a href="https://github.com/Insights-by-Supratik" target="_blank" class="social-icon">
+										<i class="fa fa-github"></i>
+									  </a>
+									<a href="https://www.facebook.com/kitarpus/" target="_blank" class="social-icon">
+									  <i class="fa fa-facebook"></i>
+									</a>
+									<a href="https://x.com/supratikbh" target="_blank" class="social-icon">
+									  <i class="fa fa-twitter"></i>
+									</a>
+									<a href="https://www.instagram.com/fatty_tbag/" target="_blank" class="social-icon">
+									  <i class="fa fa-instagram"></i>
+									</a>
+								  </div>
+								
+								<div class="padding-top60 contact-form">
+									<a href="https://drive.google.com/file/d/145PbY6LFiJFAUe5RqMnCDIUfXOvvB9gg/view" 
+									   target="_blank" 
+									   download="Supratik_Bhattacharya_Resume.pdf">
+									  <button class="btn cta-button-1">Download Resume</button>
+									</a>
+								</div>	  
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Script for Typed.js -->
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const typedElement = document.querySelector("#typed-text");
 
-.footer .col-md-4 {
-  text-align: center;
-}
+			// Initialize Typed.js
+			new Typed("#typed-text", {
+			strings: [
+				`<span style="color: white;">Supratik Bhattacharya</span>`,
+				`<span style="color: yellow;">a Product Manager</span>`,
+				`<span style="color: lightgreen;">a Data Analyst</span>`
+			],
+			typeSpeed: 50,       // Typing speed in milliseconds
+			backSpeed: 25,       // Backspace speed in milliseconds
+			loop: true,          // Loop the animation
+			startDelay: 1000,    // Delay before starting the typing effect
+			backDelay: 2000,      // Delay before starting backspacing
+			cursorChar: "|",     // You can specify the cursor character here
+			});
+		});
+		</script>
 
-.footer .mb-2 {
-  margin-bottom: 10px;
-}
+		<!-- Optional CSS for Styling -->
+		<style>
+		.cta-button-1 {
+			background-color: transparent; /* Button background color (blue) */
+			color: #55acee; /* Text color */
+			padding: 10px 20px; /* Padding for top/bottom and left/right */
+			font-size: 1.1em; /* Adjust font size */
+			border: 1px solid #fff; /* Remove border */
+			cursor: pointer; /* Pointer cursor on hover */
+			transition: background-color 0.3s ease; /* Smooth transition for background color */
+			border-radius: 30px; /* Rounded corners or pill shape */
+			text-align: center; /* Center align text */
+		  }
+		  
+		  .cta-button-1:hover {
+			background-color: #fff; /* Button background color (blue) */
+			color: #000; /* Text color */
+		  }
+		  
+		  .cta-button-1:focus {
+			outline: none; /* Remove focus outline */
+		  }
 
-.footer p {
-  margin: 5px 0;
-}
+		.social-icons {
+		display: flex;
+		justify-content: center; /* Centers the icons horizontally */
+		gap: 20px; /* Spacing between icons */
+		margin-top: 20px;
+		margin-bottom: 20px;
+		}
 
-.footer p strong {
-  display: block;
-}
+		.social-icon {
+		font-size: 1.7em; /* Set the size of the icons */
+		color: #fff; /* Color of the icons (white by default) */
+		transition: color 0.3s ease-in-out; /* Smooth transition effect */
+		}
 
-.project-card {
-  display: block; /* Ensures the card is displayed as a block */
-}
+		.social-icon:hover {
+		color: #0077b5; /* Change color on hover (LinkedIn blue for example) */
+		}
 
-</style>
+		.social-icon .fa-linkedin:hover {
+		color: #0077b5; /* LinkedIn color */
+		}
 
-</head>
-<body>
+		.social-icon .fa-facebook:hover {
+		color: #3b5998; /* Facebook color */
+		}
 
-<section id='about' class="about-section">
-  <div class="container">
-    <h2>About</h2>
-    <img src="images/about/Supratik-DP.png" alt="About Me">
-    <p>Hello! My name is Supratik Bhattacharya, and I bring over 13 years of industry expertise in product strategy, data analytics, and cross-functional collaboration. With a strong foundation in driving impactful decisions, I aim to create value through insights and innovation.</p>
-    <p>As I advance my career into analytics-focused roles, I leverage a combination of business acumen and technical skills. My passion for solving complex problems ensures a unique perspective on every project I undertake.</p>
+		.social-icon .fa-twitter:hover {
+		color: #00aced; /* Twitter color */
+		}
+
+		.social-icon .fa-instagram:hover {
+		color: #e4405f; /* Instagram color */
+		}
+
+		.dynamic-text {
+			font-weight: bold;
+			text-transform: none;
+		}
+		.no-uppercase {
+		text-transform: none;
+		color: white;
+		}
+		/* Custom cursor styling for the dynamic text */
+		.typed-cursor {
+		color: grey !important;
+		}
+		</style>
+		<!-- banner end -->
+		
+		<!-- ABOUT ME section start --> 
+		<section class="section clearfix no-view secPadding" data-animation-effect="fadeIn" style="background-color: #ffffff;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 id="about" class="title text-center">About Me</h1>
+						<!-- <p class="lead text-center">Hello, I'm Supratik Bhattacharya</p> --> 
+						<div class="space"></div>
+						<div class="row">
+							<div class="col-md-4">
+								<img src="images/Supratik.jpg" alt="Supratik Bhattacharya">
+								<div class="space"></div>
+							</div>
+							<div class="col-md-8">
+								<p>My passion lies in driving business growth and managing products through data-driven insights and efficient project management.</p>
+								<p>With 13 years of experience in the industry, I've honed my skills in product strategy, road mapping, feature prioritization, and cross-functional collaboration.</p>
+								<p>I excel at analysing data, optimising processes, and identifying opportunities for innovation, to ensure profitable outcomes and enhanced user engagement.</p>
+								<ul class="list-unstyled">
+									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Age: 38</li>
+									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Location: London, UK</li>
+									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Email: supratikbh@gmail.com</li>
+									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Mobile: +44 7479 902 730</li>
+									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Work Status: UK Resident</li>
+									<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> Visa: Valid till January 2030</li>
+								</ul>
+								  
+								  
+							</div>
+					</div>
+						
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section end -->
+		
+		<!-- SKILLS TABS AS FILTER section start -->
+		<section id="skills" class="skills-section" data-animation-effect="fadeIn" style="background-color: #dbdbdba4;">
+			<h1 id="skills" class="title text-center">Skills</h1>
+			<div class="skills-wrapper">
+			  <!-- Left Tabs -->
+			  <div id="skill-tabs" class="tabs">
+				<a class="nav-link active" href="javascript:void(0);" onclick="showCategory('all', event)">All</a>
+				<a class="nav-link" href="javascript:void(0);" onclick="showCategory('technical-skills', event)">Technical Skills</a>
+				<a class="nav-link" href="javascript:void(0);" onclick="showCategory('data-analysis', event)">Data Analysis</a>
+				<a class="nav-link" href="javascript:void(0);" onclick="showCategory('product-management', event)">Product Management</a>
+				<a class="nav-link" href="javascript:void(0);" onclick="showCategory('project-management', event)">Project Management</a>
+				<a class="nav-link" href="javascript:void(0);" onclick="showCategory('soft-skills', event)">Soft Skills</a>
+			  </div>
+		  
+			  <!-- Right Content -->
+			  <div class="content">
+
+
+
+				<div id="all" class="skill-category">
+					<div class="skills">
+						<span class="skill-pill">Advanced Excel</span>
+						<span class="skill-pill">Power BI</span>
+						<span class="skill-pill">Tableau</span>
+						<span class="skill-pill">SQL</span>
+						<span class="skill-pill">Python</span>
+						<span class="skill-pill">R Programming</span>
+						<span class="skill-pill">SPSS</span>
+						<span class="skill-pill">Word</span>
+						<span class="skill-pill">PowerPoint</span>
+
+						<span class="skill-pill">Leading Agile Squads</span>
+						<span class="skill-pill">Product Strategy</span>
+						<span class="skill-pill">Product Planning</span>
+						<span class="skill-pill">User-Centric Approach</span>
+						<span class="skill-pill">Product Backlog</span>
+						<span class="skill-pill">User Story</span>
+						<span class="skill-pill">Acceptance Criteria</span>
+						<span class="skill-pill">Product Discovery</span>
+						<span class="skill-pill">Roadmapping</span>
+						<span class="skill-pill">Feature Prioritisation</span>
+
+						<span class="skill-pill">ETL Processes</span>
+						<span class="skill-pill">Advanced Excel Modelling</span>
+						<span class="skill-pill">Data Visualisation</span>
+						<span class="skill-pill">Dashboard Creation</span>
+						<span class="skill-pill">Relational Databases</span>
+						<span class="skill-pill">Data Manipulation</span>
+						<span class="skill-pill">Report Generation</span>
+						<span class="skill-pill">Statistical Analysis</span>
+
+						<span class="skill-pill">Agile</span>
+						<span class="skill-pill">Scrum</span>
+						<span class="skill-pill">JIRA</span>
+						<span class="skill-pill">Trello</span>
+						<span class="skill-pill">Asana</span>
+						<span class="skill-pill">ClickUp</span>
+						<span class="skill-pill">Monday</span>
+
+						<span class="skill-pill">Stakeholder Management</span>
+						<span class="skill-pill">Cross-functional Collaboration</span>
+						<span class="skill-pill">Strategic Planning</span>
+						<span class="skill-pill">CRM</span>
+						<span class="skill-pill">Digital Marketing</span>
+						<span class="skill-pill">Google Analytics</span>
+						<span class="skill-pill">Google Ads</span>
+
+					  </div>
+					  
+				</div>
+
+
+				<div id="technical-skills" class="skill-category">
+					<div class="skills">
+						<span class="skill-pill">Advanced Excel</span>
+						<span class="skill-pill">Power BI</span>
+						<span class="skill-pill">Tableau</span>
+						<span class="skill-pill">SQL</span>
+						<span class="skill-pill">Python</span>
+						<span class="skill-pill">R Programming</span>
+						<span class="skill-pill">SPSS</span>
+						<span class="skill-pill">Word</span>
+						<span class="skill-pill">PowerPoint</span>
+					  </div>
+					  
+				</div>
+
+
+				<div id="data-analysis" class="skill-category">
+					<div class="skills">
+						<span class="skill-pill">ETL Processes</span>
+						<span class="skill-pill">Advanced Excel Modelling</span>
+						<span class="skill-pill">Data Visualisation</span>
+						<span class="skill-pill">Dashboard Creation</span>
+						<span class="skill-pill">Relational Databases</span>
+						<span class="skill-pill">Data Manipulation</span>
+						<span class="skill-pill">Report Generation</span>
+						<span class="skill-pill">Statistical Analysis</span>
+						<span class="skill-pill">Google Analytics</span>
+					  </div>
+					  
+				</div>
+
+				<div id="product-management" class="skill-category">
+					<div class="skills">
+						<span class="skill-pill">Leading Agile Squads</span>
+						<span class="skill-pill">Product Strategy</span>
+						<span class="skill-pill">Product Planning</span>
+						<span class="skill-pill">User-Centric Approach</span>
+						<span class="skill-pill">Product Backlog</span>
+						<span class="skill-pill">User Story</span>
+						<span class="skill-pill">Acceptance Criteria</span>
+						<span class="skill-pill">Product Discovery</span>
+						<span class="skill-pill">Roadmapping</span>
+						<span class="skill-pill">Feature Prioritisation</span>
+					  </div>
+					  
+				</div>
+
+				<div id="project-management" class="skill-category">
+					<div class="skills">
+						<span class="skill-pill">Agile</span>
+						<span class="skill-pill">Scrum</span>
+						<span class="skill-pill">JIRA</span>
+						<span class="skill-pill">Trello</span>
+						<span class="skill-pill">Asana</span>
+						<span class="skill-pill">ClickUp</span>
+						<span class="skill-pill">Monday</span>
+					  </div>
+					  
+				</div>
+
+				<div id="soft-skills" class="skill-category">
+					<div class="skills">
+						<span class="skill-pill">Stakeholder Management</span>
+						<span class="skill-pill">Cross-functional Collaboration</span>
+						<span class="skill-pill">Strategic Planning</span>
+						<span class="skill-pill">CRM</span>
+						<span class="skill-pill">Digital Marketing</span>
+						<span class="skill-pill">Communication</span>
+						<span class="skill-pill">Google Ads</span>
+					  </div>
+					  
+				</div>
+				
+
+			  </div>
+			</div>
+		  </section>
+		  
+		  <style>
+			.skills {
+			display: flex;
+			flex-wrap: wrap; /* Ensures pills wrap to the next line if necessary */
+			gap: 10px; /* Space between pills */
+			}
+
+			.skill-pill {
+			display: inline-block;
+			padding: 8px 15px; /* Adjusts the size of the pill */
+			font-size: 14px;
+			color: #000000; /* Text color */
+			background-color: #ffffff; /* Background color */
+			border-radius: 50px; /* Makes the pill shape */
+			text-align: center;
+			white-space: nowrap; /* Prevents breaking inside the pill */
+			box-shadow: 0 2px 5px #DB0A61; /* Optional: 3D effect */
+			}
+
+		  /* Skills Section Header */
+			.skills-section {
+			padding: 50px 0;
+			text-align: center;
+			background-color: #f9f9f9;
+			}
+
+			.skills-header {
+			font-size: 36px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			color: #333;
+			}
+
+			/* 3D Card Container */
+			.skills-wrapper {
+			display: flex;
+			max-width: 1100px; /* Increased width */
+			margin: 0 auto;
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* 3D Effect */
+			border-radius: 10px;
+			overflow: hidden;
+			background-color: #fff;
+			min-height: 300px; /* Added height */
+			}
+
+			/* Left Tabs (Menu) */
+			.tabs {
+			width: 30%; /* Increased width of tabs */
+			background-color: #f7f7f7;
+			display: flex;
+			flex-direction: column;
+			}
+
+			.nav-link {
+			padding: 15px;
+			font-size: 16px;
+			color: #333;
+			border-left: 4px solid transparent;
+			cursor: pointer;
+			text-decoration: none;
+			text-align: left;
+			}
+
+			.nav-link.active {
+			border-left: 4px solid #DB0A61;
+			background-color: #fff;
+			font-weight: bold;
+			color: #000;
+			}
+
+			/* Right Content */
+			.content {
+			width: 70%; /* Increased width of content */
+			padding: 30px;
+			}
+
+			.skill-category {
+			display: none;
+			}
+
+			.skill-category.active {
+			display: block;
+			}
+		
+		  </style>
+		  
+		  <script>
+		  // Function to handle showing the selected category
+		  function showCategory(category, event) {
+			// Prevent default behavior if an event exists
+			if (event) event.preventDefault();
+		  
+			// Remove active class from all categories
+			document.querySelectorAll('.skill-category').forEach(function (el) {
+			  el.classList.remove('active');
+			});
+		  
+			// Remove active class from all tabs
+			document.querySelectorAll('#skill-tabs .nav-link').forEach(function (el) {
+			  el.classList.remove('active');
+			});
+		  
+			// Add active class to the selected category
+			document.getElementById(category).classList.add('active');
+		  
+			// Add active class to the clicked tab
+			const activeTab = document.querySelector(`#skill-tabs a[onclick*="${category}"]`);
+			if (activeTab) activeTab.classList.add('active');
+		  }
+		  
+		  // Ensure the first category is active by default on page load
+		  document.addEventListener("DOMContentLoaded", function () {
+			showCategory('all');
+		  });
+		  
+		  </script>
+
+
+		<!-- QUOTE section start -->
+		<section class="hero-caption secPadding" data-animation-effect="fadeIn" style="background-color: #ffffff;">
+			<div class="container">
+			<div class="row" style="margin-top: 0px;">
+				<div class="col-sm-12">
+					<blockquote class="quote-text">
+					"Building a great product with data is like cooking a perfect meal: you need the right ingredients (data), the right recipe (insight), and the right timing (execution)."
+					<footer> <cite>Dylan Field (Co-founder and CEO, Figma)</cite></footer>
+				</blockquote>
+				</div>
+			</div>
+			</div>
+		</section>
+		<style>
+		.quote-text {
+			font-style: italic; /* Italics for the quote */
+			font-size: 2em; /* Adjust size for better readability */
+			color: #000000; /* Slightly darker text color for the quote */
+			margin-top: 20px; /* Space between the quote and the heading */
+			text-align: center; /* Center the quote */
+		}
+		
+		.quote-text footer {
+			font-weight: bold; /* Make the author's name bold */
+			margin-top: 10px; /* Space between the quote and the author */
+		}
+		
+		.quote-text cite {
+			font-style: normal; /* Remove italics for the author’s designation */
+			font-weight: normal;
+			color: #9e9e9e; /* Slightly lighter color for the designation */
+		}
+		</style>
+
+
+		<!-- PORTFOLIO section start --> 
+		<section class="section secPadding" data-animation-effect="fadeIn" style="background-color: #dbdbdba4;">
+			<div class="container">
+				<h1 class="text-center title" id="portfolio">Portfolio</h1>
+				<div class="separator"></div>
+				<br>			
+				<div class="row no-view" data-animation-effect="fadeIn">
+					<div class="col-md-12">
+
+						<!-- isotope filters start -->
+						<div class="filters text-center">
+							<ul class="nav nav-pills">
+								<li class="active"><a href="#" data-filter="*">All</a></li>
+								<li><a href="#" data-filter=".data-analysis">Data Analysis</a></li>
+								<li><a href="#" data-filter=".data-visual">Data Visualisation</a></li>
+								<li><a href="#" data-filter=".product-manager">Product Management</a></li>
+							</ul>
+						</div>
+						<!-- isotope filters end -->
+
+						<!-- portfolio items start -->
+						<div class="isotope-container row grid-space-20">
+							<div class="col-sm-6 col-md-3 isotope-item data-analysis">
+								<a href="https://github.com/Insights-by-Supratik/Fundraising-Project-Success-Prediction" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-1.jpg" alt="ICO Prediction using ML">
+										<div class="overlay-description">
+											<p>Predicting the success of an ICO project using ML models to analyze patterns in data.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">ICO Prediction using ML</div>
+								</a>
+							</div>
+
+							<div class="col-sm-6 col-md-3 isotope-item data-analysis">
+								<a href="https://github.com/Insights-by-Supratik/PCE-Prediction" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-2.jpg" alt="PCE Time-Series Prediction">
+										<div class="overlay-description">
+											<p>Comparing the predictive ability of multiple models on seasonally-adjusted US PCE values.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">PCE Time-Series Prediction</div>
+								</a>
+							</div>	
+							
+							
+							<div class="col-sm-6 col-md-3 isotope-item data-analysis">
+								<a href="https://github.com/Insights-by-Supratik/Analysing-Hotel-Reviews" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-3.jpg" alt="Analysing Hotel Reviews">
+										<div class="overlay-description">
+											<p>Performing topic modelling to identify the factors prevalent in positive and negative reviews.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">Analysing Hotel Reviews</div>
+								</a>
+							</div>
+							
+							
+							<div class="col-sm-6 col-md-3 isotope-item data-analysis data-visual">
+								<a href="https://github.com/Insights-by-Supratik/Video-Game-Demand-Forecast" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-4.jpg" alt="Video Game Demand Forecast">
+										<div class="overlay-description">
+											<p>Exploring the effectiveness of ML and Econometric models in forecasting video game sales across various regions.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">Video Game Demand Forecast</div>
+								</a>
+							</div>
+
+							<div class="col-sm-6 col-md-3 isotope-item data-visual">
+								<a href="https://github.com/Insights-by-Supratik/PowerBI-Retail-Industry-Analysis" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-5.jpg" alt="Retail Performance Analysis">
+										<div class="overlay-description">
+											<p>Analysing overall business operations and salespeople performance of a garments manufacturing company in 2023.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">Retail Performance Analysis</div>
+								</a>
+							</div>
+
+							<div class="col-sm-6 col-md-3 isotope-item product-manager">
+								<a href="https://www.vabro.com/" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-6.jpg" alt="Agile SaaS Platform">
+										<div class="overlay-description">
+											<p>AI-Powered SaaS Platform for Product Development & Project Management Solutions to businesses worldwide.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">Agile SaaS Platform</div>
+								</a>
+							</div>
+
+							<div class="col-sm-6 col-md-3 isotope-item product-manager">
+								<a href="https://demo.vmedu.com/courses/demologin?courseId=73&customerCourseId=378741" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-7.jpg" alt="SaaS Platform for Training Partners">
+										<div class="overlay-description">
+											<p>eLearning platform for students to upskill themselves on-the-go, take online proctored exams and get certified.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">Learning & Certification Platform</div>
+								</a>
+							</div>
+
+							<div class="col-sm-6 col-md-3 isotope-item product-manager">
+								<a href="https://en1-webinar.scrumstudy.com/" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-8.jpg" alt="LIVE Webinar Platform">
+										<div class="overlay-description">
+											<p>Multilingual LIVE webinar platform with real-time chat, and live exercises for students and professionals.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">LIVE Webinar Platform</div>
+								</a>
+							</div>
+
+							<div class="col-sm-6 col-md-3 isotope-item product-manager">
+								<a href="https://www.youtube.com/watch?v=fqdgog_TZu4" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-9.jpg" alt="SaaS Platform for B2B Partners">
+										<div class="overlay-description">
+											<p>Platform facilitating the onboarding of 2500+ global partners located across more than 50 countries</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">SaaS Platform for B2B Partners</div>
+								</a>
+							</div>
+
+							<div class="col-sm-6 col-md-3 isotope-item product-manager">
+								<a href="https://cdn.prod.website-files.com/641c0f25eeb2f77b5f907fcb/641c2127468d596cab37c106_VMEduBO1.jpg" target="_blank" class="image-box" style="text-decoration: none;">
+									<div class="overlay-container">
+										<img src="images/portfolio-10.jpg" alt="Internal CRM Platform">
+										<div class="overlay-description">
+											<p>Internal CRM platform with multiple functional modules, and ad-hoc reporting features.</p>
+										</div>
+									</div>
+									<div class="btn btn-default btn-block title">Internal CRM Platform</div>
+								</a>
+							</div>
+						
+						
+
+							
+
+						</div>
+						<!-- portfolio items end -->
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section end -->
+
+		<style>
+			
+
+			.overlay-container {
+				position: relative;
+				overflow: hidden;
+			}
+
+			.overlay-description {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				opacity: 0; /* Hidden by default */
+				transition: opacity 0.3s ease;
+				text-align: center;
+				padding: 10px;
+				box-sizing: border-box;
+			}
+
+			.overlay-container:hover .overlay-description {
+				opacity: 1; /* Show on hover */
+			}
+
+			.image-box img {
+				width: 100%;
+				height: 180px;
+				display: block;
+			}
+
+			.btn-block.title {
+				text-align: center;
+				font-size: 14px;
+				color: white;
+				background-color: rgba(219, 10, 97, 0.69);
+				border: none;
+				padding: 5px 0;
+				transition: opacity 0.3s ease;
+			}
+
+			.overlay-container:hover ~ .title {
+				opacity: 0; /* Hide the title on hover */
+			}
+
+			.image-box {
+				display: block;
+				text-decoration: none;
+				color: inherit;
+			}
+
+		</style>
+
+		
+		<!-- TESTIMONIALS section start --> 
+		<section class="default-bg secPadding" data-animation-effect="fadeIn" style="background-color: #ffffff;">
+			
+<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+		<h1 class="title text-center" id="testimonials" style="color: black;">Testimonials</h1>
+    </div>
   </div>
-</section>
+  <div class='row'>
+    <div class='col-md-offset-1 col-md-10' style="height: 250px;">
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators" style="position: absolute; top: 225px; z-index: 10;">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+		  <li data-target="#quote-carousel" data-slide-to="3"></li>
+		  <li data-target="#quote-carousel" data-slide-to="4"></li>
+		  <li data-target="#quote-carousel" data-slide-to="5"></li>
+		  <li data-target="#quote-carousel" data-slide-to="6"></li>
+		  <li data-target="#quote-carousel" data-slide-to="7"></li>
+		  <li data-target="#quote-carousel" data-slide-to="8"></li>
+		  <li data-target="#quote-carousel" data-slide-to="9"></li>
+		  <li data-target="#quote-carousel" data-slide-to="10"></li>
+		  <li data-target="#quote-carousel" data-slide-to="11"></li>
+		  <li data-target="#quote-carousel" data-slide-to="12"></li>
+		  <li data-target="#quote-carousel" data-slide-to="13"></li>
+		  <li data-target="#quote-carousel" data-slide-to="14"></li>
+		  <li data-target="#quote-carousel" data-slide-to="15"></li>
+		  <li data-target="#quote-carousel" data-slide-to="16"></li>
+		  <li data-target="#quote-carousel" data-slide-to="17"></li>
+		  <li data-target="#quote-carousel" data-slide-to="18"></li>
+        </ol>
+
+		<!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="images/testimonials/Mitchell.jpeg" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p style="color: black;">It was my pleasure to work with Supratik as a new client. I expect there are always issues when setting up a new account, but in a friendly, highly-responsive fashion Supratik would identify what was needed and gently nudged as necessary to resolve any issues quickly. A clear customer-focus, he made both onboarding and operations an easy and predictable experience.</p>
+                  <small style="color: black;">Mitchell Malloy, Lean-Agile Consultant</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="images/testimonials/Zimele.jpeg" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p style="color: black;">I wholeheartedly recommend Supratik as a phenomenal manager for my account. His expertise and dedication were instrumental in driving exceptional results. Supratik fostered a collaborative relationship, actively seeking feedback and addressing any concerns promptly. I have the utmost confidence in recommending Supratik for any Product Manager role.</p>
+                  <small style="color: black;">Zimele Cele, Managing Director</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          
+		  <!-- Quote 3 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Ernesto.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">I have closely worked with Supratik for several years collaborating on several projects. I was particularly impressed by his ability to communicate with new and existing clients effortlessly. He also went out of his way to encourage different perspectives and diverse viewpoints, which deepened our connections with clients and other team members and made us stronger as a training company.</p>
+							<small style="color: black;">Ernesto Ibarra, Senior Translation Specialist</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+			<!-- Quote 4 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Yinka.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Supratik is a well coordinated person, helpful and unflinchingly support projects until they come to fruition. I appreciate your support during my days of studentship to obtain my certifications as an SDC, SMC and SPOC. Even later, you were still supportive until I was certified as a SCRUMstudy Certified Trainer (SCT). Supratik, you&#8217;re favorably endorsed, go on and achieve more!</p>
+							<small style="color: black;">Yinka Ewemoje, Operations Manager</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
 
 
-<!-- Projects Section -->
-<section id="projects" class="projects-section bg-light">
-  <div class="container">
-    <h2 class="text-center">Projects</h2>
-    <div class="row" id="projects-list">
-      <!-- Project 1 -->
-      <div class="col-md-4 mb-4 project-card">
-        <div class="card d-flex flex-column">
-          <img src="images/projects/1.jpg" class="card-img-top" alt="EPL Performance Analysis">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">EPL Performance Analysis</h5>
-            <p class="card-text">A comprehensive multi-page Power BI report analyzing Premier League seasons, covering team rankings, detailed team comparisons, attack/defense statistics, and match highlights for deeper insights.</p>
-            <!-- Center align the CTA button -->
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn btn-outline-primary">More Details</a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="col-md-4 mb-4 project-card">
-        <div class="card d-flex flex-column">
-          <img src="images/projects/2.jpg" class="card-img-top" alt="Sales & Profit Analysis Report">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Sales & Profit Analysis Report</h5>
-            <p class="card-text">A detailed Power BI report offering insights into Universal Export’s sales, profit trends, product performance, customer acquisition, with emphasis on sustainable shipping and sales team performance.</p>
-            <!-- Center align the CTA button -->
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn btn-outline-primary">More Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="col-md-4 mb-4 project-card">
-        <div class="card d-flex flex-column">
-          <img src="images/projects/3.jpg" class="card-img-top" alt="Vabro SaaS Platform for Product Development & Project Management">
-          <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Project Management Tool</h5>
-            <p class="card-text">An innovative SaaS platform designed to optimize product development and project management workflows, helping businesses collaborate efficiently, boost productivity, and achieve their objectives seamlessly.</p>
-            <!-- Center align the CTA button -->
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn btn-outline-primary">More Details</a>
-            </div>
-          </div>
-        </div>
-      </div>
+			<!-- Quote 5 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Hector.png" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">I have worked with Supratik for several years now. Supratik is a highly skilled product manager. He has a deep understanding of product development, and he is able to effectively collaborate with cross-functional teams, developing product strategies and roadmaps, and he is able to effectively prioritize product features. I have no doubt that Supratik would be an asset to any company.</p>
+							<small style="color: black;">Hector Perez, Managing Director</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
 
-      <!-- Project 4 -->
-    <div class="col-md-4 mb-4 project-card">
-      <div class="card d-flex flex-column">
-        <img src="images/projects/4.jpg" class="card-img-top" alt="VMEdu SaaS Platform for Partner Onboarding">
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">Partner Onboarding Platform</h5>
-          <p class="card-text">A user-friendly application designed to simplify the onboarding process for over 2500 partners across more than 50 countries, enhancing partner satisfaction and boosting operational efficiency.</p>
-          <!-- Center align the CTA button -->
-          <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-outline-primary">More Details</a>
-          </div>
-        </div>
-      </div>
+			<!-- Quote 6 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Marcia.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">I had the pleasure of working with Supratik as my manager and I can attest to his great leadership abilities. He was able to lead our team to achieve all of our goals, even under challenging circumstances. Supratik is an excellent communicator, with strong interpersonal and project management skills thus ensuring all projects are delivered on time and to a high standard.</p>
+							<small style="color: black;">Marcia Farinas, Portuguese Translator</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 7 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Jim.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Supratik and I have worked together on several projects when collocated and distant. Supratik has been a great team member sharing his insights as well as knowledge. I have worked on teams with him and observed him working on individual assignments. He is productive and professional in both environments. If given the opportunity I would welcome working on a team with him again.</p>
+							<small style="color: black;">Jim Pruitt, Editor/Academic Content Producer</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 8 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Charles.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">I had the pleasure of working with him at VMEdu. Supratik has an ability to juggle multiple projects unlike anybody I have ever seen. He is extremely flexible with a gift for assessing and leveraging individual team member talents. This is directly related to Supratik&#39;s mastery of apply agile development principles. The teams Supratik managed were high yielding producers.</p>
+							<small style="color: black;">Charles Bell, Enterprise Agile Coach</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 9 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Nikhil.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Supratik has a keen sense of simplifying complicated user experiences. He puts in a lot of effort to constantly learn and grow. What makes him good at his work is his keen understanding of the market and customers which makes him a very effective product manager. He takes ownership of work and does not shy away from getting his hands dirty. I think any company would be lucky to have him.</p>
+							<small style="color: black;">Nikhil Kumar, Director Product Management</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 10 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Maneesh-2.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Supratik is one of the most dedicated professionals through his work at VMEdu. He thinks on the cutting edge of leadership, teamwork, planning. Supratik leads by example and I found his enthusiasm and dedication both inspiring and motivating. Result-driven, experienced and efficient team player. I&#39;d recommend Supratik as one of the Must-Haves in a team!</p>
+							<small style="color: black;">Maneesh Sharma, Product Manager</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 11 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Alexis.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Supratik was my Regional Director at VMedu during a challenging time of change. His assistance to me was incredibly valuable! He offered his time and support generously and I was helped greatly by his efforts. He facilitated a smooth transition to new, improved, and exciting processes. Supratik is a great director and I will forever appreciate his leadership.</p>
+							<small style="color: black;">Alexis Dunham, Project Manager</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 12 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Suhail.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">I have interacted with Supratik on a regular basis while he used to coordinate my training classes. He had always been very meticulous, helpful, and cooperative. Professionally he is an excellent choice for any company to hire.</p>
+							<small style="color: black;">Suhail Iqbal, Project Management Coach</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 13 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Gopi.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Glad to recommend Supratik. Through the interaction with him is short, yet he could make a significant impact. I see him very resourceful and attentive in maintaining customer relationship. Always quick in responding to queries and very well in keeping customer informed on happenings, which is the essential quality for business development.</p>
+							<small style="color: black;">Gopi Aitham, Director</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 14 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Drew.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Supratik has been fantastic in his role as Product Manager. He has a keen understanding of business value and how to motivate the team to achieve great things. Supratik will be a great addition to any team he joins!</p>
+							<small style="color: black;">Drew Nations, Operating Partner</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 15 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Shweta.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">I have worked with Supratik during the development of some products. He is not only friendly and helpful but also goes above and beyond to maintain the team spirit. Moreover, I have seen him working his way through challenges and strict product timelines. He understands the requirements in a breeze, involves himself in the brainstorming and always adds value to the discussions. I highly recommend him.</p>
+							<small style="color: black;">Shweta Chauhan, Senior iOS Developer</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 16 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Fabiola.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Supratik is a professional with a high degree of customer service, always on the lookout to meet the needs and solve any problem. I highly recommend him as a Product Manager.</p>
+							<small style="color: black;">Fabiola Galván, IT Project Manager</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 17 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Javier.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Excellent professional. It was my pleasure doing business with you. Very supporting on the strategies to increase my business.</p>
+							<small style="color: black;">Javier González, Services Director</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 18 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Sayoni.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">During the years that I have worked with Supratik, I have had the opportunity to observe his interpersonal skills. He believes in positive motivation and is enthusiastic about all that he does.</p>
+							<small style="color: black;">Sayoni Bhowmik, Sales Enablement Production Specialist</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+
+			<!-- Quote 19 -->
+			<div class="item">
+				<blockquote>
+					<div class="row">
+						<div class="col-sm-3 text-center">
+							<img class="img-circle" src="images/testimonials/Nabonita.jpeg" style="width: 100px;height:100px;">
+						</div>
+						<div class="col-sm-9">
+							<p style="color: black;">Supratik is extremely good at Relationship Management. He goes extra miles in learning, exploring, and finally guiding the partners with solutions. His supportive way of working helps the partners to take engagement to new heights.</p>
+							<small style="color: black;">Nabonita Roy Kambli, Senior Education Developer</small>
+						</div>
+					</div>
+				</blockquote>
+			</div>
+
+        </div>              
+      </div>                          
     </div>
-
-    <!-- Project 5 -->
-    <div class="col-md-4 mb-4 project-card">
-      <div class="card d-flex flex-column">
-        <img src="images/projects/5.jpg" class="card-img-top" alt="VMEdu eLearning and Certification Platform">
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">eLearning & Certification Platform</h5>
-          <p class="card-text">An eLearning and certification platform that allows users to explore content, schedule exams, and maintain certifications for life, offering flexibility and convenience to learners for continuous growth.</p>
-          <!-- Center align the CTA button -->
-          <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-outline-primary">More Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 6 -->
-    <div class="col-md-4 mb-4 project-card">
-      <div class="card d-flex flex-column">
-        <img src="images/projects/6.jpg" class="card-img-top" alt="Multilingual Webinar Module">
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">Multilingual Webinar Module</h5>
-          <p class="card-text">A multilingual webinar module that allows students worldwide to attend live sessions, offering multilingual support, live chat, and synchronized concurrent streaming for an enhanced learning experience.</p>
-          <!-- Center align the CTA button -->
-          <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-outline-primary">More Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 7 -->
-    <div class="col-md-4 mb-4 project-card">
-      <div class="card d-flex flex-column">
-        <img src="images/projects/7.jpg" class="card-img-top" alt="Enhanced CRM System">
-        <div class="card-body d-flex flex-column justify-content-between">
-          <h5 class="card-title">Enhanced CRM System</h5>
-          <p class="card-text">An upgraded CRM system with 10 integrated modules & advanced reporting features, aimed at streamlining workflows, minimizing inefficiencies, and improving decision-making processes across the organization.</p>
-          <!-- Center align the CTA button -->
-          <div class="d-flex justify-content-center">
-            <a href="#" class="btn btn-outline-primary">More Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    </div>
-    <!-- Load More Button -->
-    <div class="text-center mt-4" id="load-more-container">
-      <button class="btn btn-primary" id="load-more-btn">Load More</button>
-    </div>
-
-    <!-- Add two blank rows for spacing -->
-    <div class="row mb-4"></div> <!-- First blank row -->
-    <div class="row mb-4"></div> <!-- Second blank row -->
-
-
   </div>
-</section>
+</div>
+		</section>
+		<!-- section end -->
+				
 
-<!-- Skills Section -->
-<section id="skills" class="skills-section bg-white" id="skills">
-  <div class="container">
-    <h2 class="text-center">Skills</h2>
-    <div class="row">
-      <!-- Skill 1 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/1.png" class="card-img-top" alt="Python">
-          <div class="card-body">
-            <a href="https://pythoninstitute.org/pcap" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 2 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/2.png" class="card-img-top" alt="Power BI">
-          <div class="card-body">
-            <a href="https://learn.microsoft.com/en-us/credentials/certifications/data-analyst-associate/" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 3 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
-          <div class="card-body">
-            <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-database-administrator-associate/" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
-      <!-- Skill 4 -->
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card">
-          <img src="images/skills/4.png" class="card-img-top" alt="R Programming">
-          <div class="card-body">
-            <a href="https://www.edx.org/learn/r-programming" class="btn btn-outline-primary">Link to course or bootcamp</a>
-          </div>
-        </div>
-      </div>
+		<!-- CONTACT US footer section start --> 
+		<footer id="footer">
 
-    </div>
-  </div>
-</section>
+			<!-- .footer start --> 
+			<div class="footer section">
+				<div class="container">
+					<h1 class="title text-center" id="contact">Contact Me</h1>
+					<div class="space"></div>
+					<div class="row">
+						
+						<div class="col-sm-6">
+							<div class="footer-content">
+								<form role="form" id="footer-form">
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="name2">Name</label>
+										<input type="text" class="form-control" id="name2" placeholder="Name" name="name2" required>
+										<i class="fa fa-user form-control-feedback"></i>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="email2">Email address</label>
+										<input type="email" class="form-control" id="email2" placeholder="Enter email" name="email2" required>
+										<i class="fa fa-envelope form-control-feedback"></i>
+									</div>
+									<div class="form-group has-feedback">
+										<label class="sr-only" for="message2">Message</label>
+										<textarea class="form-control" rows="8" id="message2" placeholder="Message" name="message2" required></textarea>
+										<i class="fa fa-pencil form-control-feedback"></i>
+									</div>
+									<input type="submit" value="Send" class="btn btn-default">
+								</form>
+							</div>
+						</div>
+						
+						<div class="col-sm-6">
+							<div class="footer-content">
+								
 
+							<div class="widget-content">
 
+								<p>Feel free to drop me a message if you'd like to connect, collaborate, or discuss exciting opportunities. Whether you prefer a virtual chat or a coffee meetup, I'd love to hear from you and explore how we can work together. Let's connect on LinkedIn or reach out directly – looking forward to our conversation! </p><br/>
 
+								<p class="contacts"><i class="fa fa-map-marker"></i> London, United Kingdom </p>
 
-<!-- Contact Form -->
-<section id="contact" class="contact-section bg-light">
-  <div class="container text-center">
-    <h2 class="text-center">Contact Me</h2>
-    <p class="mt-0">Feel free to drop a line to get in touch</p>
-    
-    <form id="contact-form" class="mx-auto" style="max-width: 600px;">
-      <!-- Name Field -->
-      <div class="row mb-3">
-        <div class="col-md-12">
-          <input type="text" class="form-control" id="name" name="name" placeholder="Name*" required />
-        </div>
-      </div>
+								<p class="contacts"><i class="fa fa-phone"></i> +44 7479 902 730</p>
 
-      <!-- Email Field -->
-      <div class="row mb-3">
-        <div class="col-md-12">
-          <input type="email" class="form-control" id="email" name="email" placeholder="Email*" required />
-        </div>
-      </div>
+								<p class="contacts"><i class="fa fa-envelope"></i> supratikbh@gmail.com</p>
 
-      <!-- Message Field -->
-      <div class="row mb-3">
-        <div class="col-md-12">
-          <textarea class="form-control" id="message" name="message" rows="4" placeholder="Message*" required></textarea>
-        </div>
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Send</button>
-    </form>
+							
 
-    <div id="status-message" class="mt-3"></div>
-  </div>
+							</div>
 
-  <!-- Footer Section -->
-  <div class="footer bg-dark text-white py-4">
-    <div class="container">
-      <div class="row text-center">
-        <!-- Mobile -->
-        <div class="col-md-4 mb-3">
-          <img src="icons/phone.png" alt="Mobile Icon" class="mb-2" style="width: 40px;">
-          <p><strong>Mobile</strong></p>
-          <p>+44 7479 902730</p>
-        </div>
-        <!-- Location -->
-        <div class="col-md-4 mb-3">
-          <img src="icons/location.png" alt="Location Icon" class="mb-2" style="width: 40px;">
-          <p><strong>Location</strong></p>
-          <p>London, United Kingdom</p>
-        </div>
-        <!-- Email -->
-        <div class="col-md-4 mb-3">
-          <img src="icons/email.png" alt="Email Icon" class="mb-2" style="width: 40px;">
-          <p><strong>Email</strong></p>
-          <p>supratikbh@gmail.com</p>
-        </div>
-      </div>
-    </div>
-  </div>
+						</aside>
+								<ul class="social-links">
+									<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/supratikbh/"><i class="fa fa-linkedin"></i></a></li>
+									<li class="github"><a target="_blank" href="https://github.com/Insights-by-Supratik"><i class="fa fa-github"></i></a></li>
+									<li class="facebook"><a target="_blank" href="https://www.facebook.com/kitarpus/"><i class="fa fa-facebook"></i></a></li>
+									<li class="twitter"><a target="_blank" href="https://x.com/supratikbh"><i class="fa fa-twitter"></i></a></li>
+									<li class="instagram"><a target="_blank" href="https://www.instagram.com/fatty_tbag/"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- .footer end -->
 
-</section>
+		</footer>
+		<!-- footer end -->
 
+		<!-- JavaScript --> 
+		<script type="text/javascript" src="plugins/jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="plugins/modernizr.js"></script>
+		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
+		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
 
-      
-      
-    </div>
-  </div>
-</section>
-
-<!-- Sticky Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand" onclick="scrollToTop()" style="cursor: pointer;">
-      <img src="icons/logo.png" alt="Logo" style="height: 50px; width: auto;">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Scroll to Top Icon -->
-<img id="scrollToTopIcon" src="icons/top.png" alt="Scroll to Top" style="width: 50px; height: 50px; display: none; position: fixed; bottom: 20px; right: 20px; cursor: pointer;">
-
-
-<!-- Add additional projects in hidden rows initially -->
-
-<script>
-  // JavaScript to handle the Load More functionality
-  let currentProjectCount = 6; // Initial number of visible projects
-  
-  document.getElementById('load-more-btn').addEventListener('click', function() {
-    const projects = document.querySelectorAll('.project-card');
-    // Show the next 6 projects
-    for (let i = currentProjectCount; i < currentProjectCount + 6; i++) {
-      if (projects[i]) {
-        projects[i].style.display = 'block'; // Show the project
-      }
-    }
-  
-    currentProjectCount += 6; // Increase the visible projects count
-  
-    // If there are no more projects to show, hide the Load More button
-    if (currentProjectCount >= projects.length) {
-      document.getElementById('load-more-btn').style.display = 'none';
-    }
-  });
-  
-  // Initially hide projects after the first 6
-  document.querySelectorAll('.project-card').forEach((card, index) => {
-    if (index >= 6) {
-      card.style.display = 'none';
-    }
-  });
-  </script>
-
-
-<!-- Add EmailJS Script -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-  // Initialize EmailJS with your Public Key
-  emailjs.init('ix3G0Earso154-jr2'); // Replace with your actual Public Key
-
-  // Handle Form Submission
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Collect form data
-    const formData = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      message: document.getElementById('message').value
-    };
-
-    // Send email using EmailJS
-    emailjs
-      .send('service_44r951g', 'template_q1wkj4d', formData) // Replace with actual IDs
-      .then(
-        function (response) {
-          document.getElementById('status-message').innerHTML =
-            'Your message has been sent successfully!';
-          document.getElementById('status-message').style.color = 'green';
-          document.getElementById('contact-form').reset();
-        },
-        function (error) {
-          document.getElementById('status-message').innerHTML =
-            'Failed to send message. Please try again later.';
-          document.getElementById('status-message').style.color = 'red';
-        }
-      );
-  });
-</script>
-
-
-<script>
-  // Get the icon
-  const scrollToTopIcon = document.getElementById("scrollToTopIcon");
-
-  // Show icon when user scrolls down
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 200) { // Show after 200px of scrolling
-      scrollToTopIcon.style.display = "block";
-    } else {
-      scrollToTopIcon.style.display = "none";
-    }
-  });
-
-  // Scroll to top when icon is clicked
-  scrollToTopIcon.addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-</script>
-
-<script>
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
-</script>
-
-
-<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="js/custom.js"></script>
+		
+	</body>
 </html>
